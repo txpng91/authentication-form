@@ -18,7 +18,6 @@ function Authenticate({ token }) {
         }
       );
       const result = await res.json();
-      console.log(result);
       setSuccessMessage(result.message);
       setUsername(result.data.username);
     } catch (error) {
