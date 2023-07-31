@@ -23,6 +23,7 @@ function SignUpForm({ setToken }) {
       const result = await res.json();
       console.log(result);
       setToken(result.token);
+      alert('Thank you for signing up!');
     } catch (error) {
       setError(error.message);
     }
@@ -36,8 +37,10 @@ function SignUpForm({ setToken }) {
         <label htmlFor='username'>Username: </label>
         <br />
         <input
+          required
           type='text'
           value={username}
+          minLength={8}
           onChange={(e) => {
             setUsername(e.target.value);
           }}
@@ -45,8 +48,10 @@ function SignUpForm({ setToken }) {
         <br />
         <label htmlFor='password'>Password:</label> <br />
         <input
+          required
           type='password'
           value={password}
+          minLength={8}
           onChange={(e) => {
             setPassword(e.target.value);
           }}
