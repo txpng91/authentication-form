@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+.signup-form {
+  margin: 10px auto;
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.267);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  padding: 10px;
+}
+
+form input {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 2px 0 20px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+form input:active {
+  border-color: cornflowerblue;
+}
+
+.authentication-section {
+  margin: 10px auto;
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.267);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  padding: 10px;
+}
