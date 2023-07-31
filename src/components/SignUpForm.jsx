@@ -5,8 +5,6 @@ function SignUpForm({ setToken }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
-  //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InR4cG5nOTEiLCJwYXNzd29yZCI6IjEyMzQ1IiwiaWF0IjoxNjkwNTI0Nzc3fQ.XmpiVBJrPKl6y4Ikj1m1iiOZOcAk5mT5bNlC5LtH3bc"
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -21,7 +19,6 @@ function SignUpForm({ setToken }) {
         }),
       });
       const result = await res.json();
-      console.log(result);
       setToken(result.token);
       alert('Thank you for signing up!');
     } catch (error) {
